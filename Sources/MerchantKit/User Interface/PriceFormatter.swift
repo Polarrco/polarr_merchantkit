@@ -4,6 +4,8 @@ import Foundation
 ///
 /// Typically, you will pass a `Purchase.price` to this formatter for display in the user interface. Use `SubscriptionPriceFormatter` for subscription products where strings like `£3.99 per month` are more appropriate.
 public final class PriceFormatter {
+    public static let shared = PriceFormatter()
+    
     /// Text to prepend before the formatted price value. Defaults to empty string.
     public var prefix: String = ""
     
